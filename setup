@@ -89,7 +89,7 @@ cd /tmp
 git clone https://aur.archlinux.org/paru-bin
 cd paru-bin
 makepkg -si --noconfirm
-paru -S --needed --noconfirm firefox microsoft-edge-stable-bin rofi-greenclip input-remapper-git carapace-bin ttf-jetbrains-mono-nerd picom slack-desktop
+paru -S --needed --noconfirm firefox microsoft-edge-stable-bin rofi-greenclip input-remapper-git carapace-bin ttf-jetbrains-mono-nerd picom slack-desktop gnome-calculator gnome-calendar
 SCRIPT
 }
 
