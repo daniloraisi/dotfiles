@@ -219,6 +219,7 @@ assign [class="(?i)microsoft-edge" title="^(?i).*(?=Personal).*$"] $ws2
 assign [class="(?i)microsoft-edge" title="^(?i).*(?=Work).*$"] $ws3
 assign [class="(?i)microsoft-edge" title="^(?i).*(?=Pessoal).*$"] $ws2
 assign [class="(?i)microsoft-edge" title="^(?i).*(?=Trabalho).*$"] $ws3
+assign [class="(?i)VirtualBox Manager"] $ws5
 assign [class="Thunar"] $ws4
 assign [class="Slack"] $ws10
 
@@ -285,6 +286,8 @@ for_window [class="Pamac-manager"] floating enable
 for_window [window_role="About"] floating enable
 for_window [class="(?i)xfce4-terminal" title="(?i)(?=xfce4_float)"] floating enable
 for_window [class="gnome-calculator"] floating enable
+for_window [class="VirtualBox Manager"] layout stacking
+for_window [class="VirtualBox Machine"] layout stacking
 
 # set border of floating window
 for_window [class="urxvt"] border pixel 1
