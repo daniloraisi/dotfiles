@@ -180,14 +180,14 @@ bindsym $mod+b mode "$browser_launch"
 
 mode "$browser_launch" {
 	bindsym p exec --no-startup-id /usr/bin/microsoft-edge-stable --profile-directory="Default"; mode "default"
-	bindsym w exec --no-startup-id /usr/bin/microsoft-edge-stable --profile-directory="Profile 1"; mode "default"
+	bindsym w exec --no-startup-id /usr/bin/microsoft-edge-stable --profile-directory="Profile 2"; mode "default"
 
 	bindsym Escape mode "default"
 	bindsym Return mode "default"
 }
 
 bindsym $mod+e exec --no-startup-id /usr/bin/thunar
-bindsym Print exec --no-startup-id scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
+bindsym Print exec --no-startup-id scrot -s ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/Pictures/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
 # Power Profiles menu switcher (rofi)
 bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/scripts/power-profiles
@@ -264,7 +264,7 @@ exec --no-startup-id /usr/bin/dunst
 # Auto start apps
 exec --no-startup-id sleep 1 && xfce4-terminal
 exec --no-startup-id sleep 2 && microsoft-edge-stable --profile-directory="Default"
-exec --no-startup-id sleep 3 && microsoft-edge-stable --profile-directory="Profile 1"
+exec --no-startup-id sleep 3 && microsoft-edge-stable --profile-directory="Profile 2"
 exec --no-startup-id sleep 4 && slack
 
 ##################
