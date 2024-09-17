@@ -35,7 +35,7 @@ source $source_dir/git.fish
 
 source (brew --prefix)/opt/asdf/libexec/asdf.fish
 
-theme_gruvbox "dark" "hard"
+theme_gruvbox "dark" "medium"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/danilo/google-cloud-sdk/path.fish.inc' ]

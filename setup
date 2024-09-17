@@ -86,10 +86,10 @@ SCRIPT
 
    bash <<'SCRIPT'
 cd /tmp
-git clone https://aur.archlinux.org/paru-bin
-cd paru-bin
+git clone https://aur.archlinux.org/yay
+cd yay
 makepkg -si --noconfirm
-paru -S --needed --noconfirm firefox microsoft-edge-stable-bin rofi-greenclip input-remapper-git carapace-bin ttf-jetbrains-mono-nerd picom slack-desktop gnome-calculator gnome-calendar
+yay -S --needed --noconfirm firefox microsoft-edge-stable-bin rofi-greenclip input-remapper-git carapace-bin ttf-jetbrains-mono-nerd picom slack-desktop gnome-calculator gnome-calendar
 SCRIPT
 }
 
