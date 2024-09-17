@@ -89,7 +89,7 @@ cd /tmp
 git clone https://aur.archlinux.org/yay
 cd yay
 makepkg -si --noconfirm
-yay -S --needed --noconfirm firefox microsoft-edge-stable-bin rofi-greenclip input-remapper-git carapace-bin ttf-jetbrains-mono-nerd picom slack-desktop gnome-calculator gnome-calendar
+yay -S --needed --noconfirm carapace-bin
 SCRIPT
 }
 
@@ -104,7 +104,7 @@ homebrew() {
 
 homebrew_packages() {
 	homebrew
-	/home/linuxbrew/.linuxbrew/bin/brew install starship bat eza fd ripgrep fzf procs zoxide lazygit asdf luarocks helix neovim zellij
+	/home/linuxbrew/.linuxbrew/bin/brew install starship bat eza fd ripgrep fzf procs zoxide lazygit gitui asdf luarocks helix neovim zellij
 	/home/linuxbrew/.linuxbrew/opt/fzf/install --key-bindings --completion --update-rc --no-bash --no-zsh
 }
 
