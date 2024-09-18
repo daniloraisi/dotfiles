@@ -86,8 +86,8 @@ SCRIPT
 
    bash <<'SCRIPT'
 cd /tmp
-git clone https://aur.archlinux.org/yay
-cd yay
+git clone https://aur.archlinux.org/yay-bin
+cd yay-bin
 makepkg -si --noconfirm
 yay -S --needed --noconfirm firefox microsoft-edge-stable-bin rofi-greenclip input-remapper-git carapace-bin ttf-jetbrains-mono-nerd picom slack-desktop gnome-calculator gnome-calendar
 SCRIPT
